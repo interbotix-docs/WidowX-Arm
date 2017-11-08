@@ -1,0 +1,20 @@
+.. Template documentation master file, created by
+   sphinx-quickstart on Wed Oct 25 16:16:43 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Template Getting Started Guide
+==============================
+
+.. image:: https://cdn.cultofmac.com/wp-content/uploads/2015/10/samsung-building-robot-army-to-replace-human-factory-workers-image-cultofandroidcomwp-contentuploads201510Terminator-2-5-780x585.jpg
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+    
+    overview.rst
+    hardware.rst
+    software.rst
+    testing.rst
+    operation.rst
+    projects.rst
