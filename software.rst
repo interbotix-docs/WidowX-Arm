@@ -16,12 +16,12 @@ Arduino IDE Setup
 Firmware
 --------
 
-  Firmware for the WidowX is dependent on how you intend to control it.
+  Firmware for the WidowX is dependent on how you intend to control it. For an ROS installation or to use Dynamanager, you will use the ros sketch in the ArbotiX Sketches folder you downloaded in the Arduino IDE Setup. To use the Arm with the Armlink Software, you will use the Armlink Sketch and follow the Armlink instructions.
 
 Firmware: ROS
 -------------
 
-  For an ROS install, you use the ROS passthrough you installed during the Arduino IDE setup.
+  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup.
 
 
 
@@ -43,14 +43,14 @@ Software For ROS
 Software For ROS: Install Dev branch of GTK 3 for compilers
 -----------------------------------------
 
-.. code-block:: none
+.. highlight:: sh
   sudo apt-get install build-essential libgtk-3-dev
 
 Software For ROS: Install ROS Kinetic
 -------------------
 
 `Installation Instructions from ROS.org<http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
-.. code-block:: none
+.. highlight:: sh
   sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
   sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
@@ -73,19 +73,19 @@ Software For ROS: RealSense ROS Package Install:
 ------------------------------------------------
 
 Prerequisites
-.. code-block:: none
+.. highlight:: sh
   wget -O enable_kernel_sources.sh http://bit.ly/en_krnl_src
 
   bash ./enable_kernel_sources.sh
 
 Sensor package
-.. code-block:: none
+.. highlight:: sh
   sudo apt install ros-kinetic-librealsense ros-kinetic-realsense-camera
 
   sudo reboot
 
 Kernel 4.10 installation work-around
-.. code-block:: none
+.. highlight:: sh
   sudo apt-get install libglfw3-dev
 
   cd ~
@@ -111,7 +111,7 @@ Kernel 4.10 installation work-around
 Software For ROS: Additional dependencies
 -----------------------------------------
 
-.. code-block:: none
+.. highlight:: sh
   sudo apt install git htop
 
   sudo apt install ros-kinetic-moveit ros-kinetic-pcl-ros
@@ -120,7 +120,7 @@ Software For ROS: Setting dialout permission for Arbotix
 --------------------------------------------------------
 
   Replace yourUserAccount with the system account you are using
-.. code-block:: none
+.. highlight:: sh
   sudo usermod -a -G dialout yourUserAccount
 
   sudo reboot
@@ -128,7 +128,7 @@ Software For ROS: Setting dialout permission for Arbotix
 Software For ROS: Clone widowx_arm repository and build
 -------------------------------------------------------
 
-.. code-block:: none
+.. highlight:: sh
   mkdir -p ~/widowx_arm/src
 
   cd ~/widowx_arm/src
@@ -144,7 +144,7 @@ Software For ROS: Clone widowx_arm repository and build
 Software For ROS: Test execution without additional sensors
 -----------------------------------------------------------
 
-.. code-block:: none
+.. highlight:: sh
   cd ~/widowx_arm
 
   source devel/setup.bash
@@ -154,7 +154,7 @@ Software For ROS: Test execution without additional sensors
 Software For ROS: Test execution with SR300 sensor
 --------------------------------------------------
 
-.. code-block:: none
+.. highlight:: sh
   cd ~/widowx_arm
 
   source devel/setup.bash
