@@ -36,127 +36,116 @@ Dynamixel Servo ID
 
 
 Software For ROS
---------
+----------------
 
   Install Xenial (Ubuntu 16.04.X LTS) on your machine. If you don't know how to do this, follow the directions on the `Ubuntu Website<https://www.ubuntu.com/download/desktop>`_ .
 
 Software For ROS: Install Dev branch of GTK 3 for compilers
------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. highlight:: sh
-  sudo apt-get install build-essential libgtk-3-dev
+  * sudo apt-get install build-essential libgtk-3-dev
 
 Software For ROS: Install ROS Kinetic
--------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 `Installation Instructions from ROS.org<http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
-.. highlight:: sh
-  sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+  * sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
-  sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
+  * sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
 
-  sudo apt update
+  * sudo apt update
 
-  sudo apt upgrade
+  * sudo apt upgrade
 
-  sudo apt install ros-kinetic-desktop
+  * sudo apt install ros-kinetic-desktop
 
-  sudo rosdep init
+  * sudo rosdep init
 
-  rosdep update
+  * rosdep update
 
-  echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+  * echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
-  source ~/.bashrc
+  * source ~/.bashrc
 
 Software For ROS: RealSense ROS Package Install:
-------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Prerequisites
-.. highlight:: sh
-  wget -O enable_kernel_sources.sh http://bit.ly/en_krnl_src
-
-  bash ./enable_kernel_sources.sh
+  * wget -O enable_kernel_sources.sh http://bit.ly/en_krnl_src
+  * bash ./enable_kernel_sources.sh
 
 Sensor package
-.. highlight:: sh
-  sudo apt install ros-kinetic-librealsense ros-kinetic-realsense-camera
+  * sudo apt install ros-kinetic-librealsense ros-kinetic-realsense-camera
 
-  sudo reboot
+  * sudo reboot
 
 Kernel 4.10 installation work-around
-.. highlight:: sh
-  sudo apt-get install libglfw3-dev
+  * sudo apt-get install libglfw3-dev
 
-  cd ~
+  * cd ~
 
-  git clone https://github.com/IntelRealSense/librealsense.git
+  * git clone https://github.com/IntelRealSense/librealsense.git
 
-  cd librealsense
+  * cd librealsense
 
-  mkdir build && cd build
+  * mkdir build && cd build
 
-  cmake ../
+  * cmake ../
 
-  make && sudo make install
+  * make && sudo make install
 
-  cd ..
+  * cd ..
 
-  sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
+  * sudo cp config/99-realsense-libusb.rules /etc/udev/rules.d/
 
-  sudo udevadm control --reload-rules && udevadm trigger
+  * sudo udevadm control --reload-rules && udevadm trigger
 
-  ./scripts/patch-realsense-ubuntu-xenial.sh
+  * ./scripts/patch-realsense-ubuntu-xenial.sh
 
 Software For ROS: Additional dependencies
------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. highlight:: sh
-  sudo apt install git htop
+  * sudo apt install git htop
 
-  sudo apt install ros-kinetic-moveit ros-kinetic-pcl-ros
+  * sudo apt install ros-kinetic-moveit ros-kinetic-pcl-ros
 
 Software For ROS: Setting dialout permission for Arbotix
---------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  Replace yourUserAccount with the system account you are using
-.. highlight:: sh
-  sudo usermod -a -G dialout yourUserAccount
+  Replace *yourUserAccount* with the system account you are using
+  * sudo usermod -a -G dialout yourUserAccount
 
-  sudo reboot
+  * sudo reboot
 
 Software For ROS: Clone widowx_arm repository and build
--------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. highlight:: sh
-  mkdir -p ~/widowx_arm/src
+  * mkdir -p ~/widowx_arm/src
 
-  cd ~/widowx_arm/src
+  * cd ~/widowx_arm/src
 
-  git clone https://github.com/Interbotix/widowx_arm.git .
+  * git clone https://github.com/Interbotix/widowx_arm.git .
 
-  git clone https://github.com/Interbotix/arbotix_ros.git -b parallel_gripper
+  * git clone https://github.com/Interbotix/arbotix_ros.git -b parallel_gripper
 
-  cd ~/widowx_arm
+  * cd ~/widowx_arm
 
-  catkin_make
+  * catkin_make
 
 Software For ROS: Test execution without additional sensors
------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. highlight:: sh
-  cd ~/widowx_arm
+  * cd ~/widowx_arm
 
-  source devel/setup.bash
+  * source devel/setup.bash
 
-  roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=false
+  * roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=false
 
 Software For ROS: Test execution with SR300 sensor
---------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. highlight:: sh
-  cd ~/widowx_arm
+  * cd ~/widowx_arm
 
-  source devel/setup.bash
+  * source devel/setup.bash
 
-  roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=true
+  * roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=true
