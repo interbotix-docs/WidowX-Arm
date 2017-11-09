@@ -52,8 +52,8 @@ No Servos Kit Includes
 - 12v 10a Power Supply
 - FTDI 5v Programming Cable
 
-Use Cases
----------
+ROS Use Cases
+--------------
 
 **Identify and Sort**
 
