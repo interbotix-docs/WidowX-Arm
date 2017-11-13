@@ -32,7 +32,7 @@ Firmware: WidowxArmTest
 Firmware: ROS
 ^^^^^^^^^^^^^
 
-  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup. This firmware acts as a passthrough, compatible with the 'arbotix_python <http://wiki.ros.org/arbotix_python>'_ library and any derivatives. All of the configuration is handled by the software passing commands to and reading data from your ArbotiX-M. This sketch is also used by the DynaManager Software, useful for IDing your servos.
+  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup. This firmware acts as a passthrough, compatible with the `arbotix_python <http://wiki.ros.org/arbotix_python>`_ library and any derivatives. All of the configuration is handled by the software passing commands to and reading data from your ArbotiX-M. This sketch is also used by the DynaManager Software, useful for IDing your servos.
 
 
 
