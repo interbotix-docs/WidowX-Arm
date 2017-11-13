@@ -42,7 +42,7 @@ Firmware: ROS
 Firmware: ArmLink
 ^^^^^^^^^^^^^^^^^
 
-  If you would like to control your WidowX arm over a USB connection to a computer using a simple graphic user interface, You might want to try loading the **InterbotixArmLinkSerial** Firmware and running the ArmLink Software.
+  If you would like to control your WidowX arm over a USB connection to a computer using a simple graphic user interface, You might want to try loading the **InterbotixArmLinkSerial** Firmware and running the ArmLink Software. Check out the `ArmLink Software Guide<http://learn.trossenrobotics.com/36-demo-code/137-interbotix-arm-link-software.html>`_ for more detail.
 
 
 Dynamixel Servo ID
