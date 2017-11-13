@@ -1,7 +1,7 @@
 Software
 ========
 
-  Setting up the software for the WidowX Robot Arm isn't complicated. You will need the Arduino IDE to install firmware on to the ArbotiX-M. If you are setting up ROS, you will need a computer compatible with Xenial (Ubuntu 16.04), and ROS Kinetic.
+  In this section, we'll be setting up the software for the WidowX Robot Arm. You will need the Arduino IDE to install firmware on to the ArbotiX-M. If you are setting up ROS, you will need a computer compatible with Xenial (Ubuntu 16.04), and ROS Kinetic.
 
   .. raw:: html
      :file: inclusion.html
