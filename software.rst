@@ -55,7 +55,7 @@ Dynamixel Servo ID
 Software For ROS
 ----------------
 
-  Install Xenial (Ubuntu 16.04.X LTS) on your machine. If you don't know how to do this, follow the directions on the `Ubuntu Website<https://www.ubuntu.com/download/desktop>`_
+  Install Xenial (Ubuntu 16.04.X LTS) on your machine. If you don't know how to do this, follow the directions on the `Ubuntu Website <https://www.ubuntu.com/download/desktop>`_
 
 Software For ROS: Install Dev branch of GTK 3 for compilers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -65,7 +65,7 @@ Software For ROS: Install Dev branch of GTK 3 for compilers
 Software For ROS: Install ROS Kinetic
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  `Installation Instructions from ROS.org<http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
+  `Installation Instructions from ROS.org <http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
 
   * sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 
