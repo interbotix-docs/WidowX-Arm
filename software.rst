@@ -32,7 +32,7 @@ Firmware: WidowxArmTest
 Firmware: ROS
 ^^^^^^^^^^^^^
 
-  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup. This firmware acts as a passthrough, compatible with the 'arbotix_python<http://wiki.ros.org/arbotix_python>'_ library and any derivatives. All of the configuration is handled by the software passing commands to and reading data from your ArbotiX-M. This sketch is also used by the DynaManager Software, useful for IDing your servos.
+  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup. This firmware acts as a passthrough, compatible with the 'arbotix_python <http://wiki.ros.org/arbotix_python>'_ library and any derivatives. All of the configuration is handled by the software passing commands to and reading data from your ArbotiX-M. This sketch is also used by the DynaManager Software, useful for IDing your servos.
 
 
 
@@ -42,7 +42,7 @@ Firmware: ROS
 Firmware: ArmLink
 ^^^^^^^^^^^^^^^^^
 
-  If you would like to control your WidowX arm over a USB connection to a computer using a simple graphic user interface, You might want to try loading the **InterbotixArmLinkSerial** Firmware and running the ArmLink Software. Check out the `ArmLink Software Guide<http://learn.trossenrobotics.com/36-demo-code/137-interbotix-arm-link-software.html>`_ for more detail.
+  If you would like to control your WidowX arm over a USB connection to a computer using a simple graphic user interface, You might want to try loading the **InterbotixArmLinkSerial** Firmware and running the ArmLink Software. Check out the `ArmLink Software Guide <http://learn.trossenrobotics.com/36-demo-code/137-interbotix-arm-link-software.html>`_ for more detail.
 
 
 Dynamixel Servo ID
