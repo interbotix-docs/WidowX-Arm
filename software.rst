@@ -16,17 +16,34 @@ Arduino IDE Setup
 Firmware
 --------
 
-  Firmware for the WidowX is dependent on how you intend to control it. For an ROS installation or to use Dynamanager, you will use the ros sketch in the ArbotiX Sketches folder you downloaded in the Arduino IDE Setup. To use the Arm with the Armlink Software, you will use the Armlink Sketch and follow the Armlink instructions.
+  Firmware for the WidowX is dependent on how you intend to control it. For an ROS installation or to use DynaManager, you will use the ros sketch in the ArbotiX Sketches folder you downloaded in the Arduino IDE Setup. To use the Arm with the Armlink Software, you will use the Armlink Sketch and follow the Armlink instructions.
+
+
+Firmware: WidowxArmTest
+^^^^^^^^^^^^^^^^^^^^^^^
+
+  A great piece of code to run for testing your WidowX Arm build is the WidowxArmTest, included in the files you downloaded in the Arduino IDE Setup. Once the program is loaded, make sure that your robot is powered from a 12v power supply, and that the power jumper is set to 'VIN'. Once the robot is programmed and powered, it will move to a 'Center Position' where each servo horn is at its centered position. You will need to wait for *~10 seconds* as the robot starts the build check. The robot should move in the exact way as shown in this video.
+
+.. raw:: html
+   :url: http://www.trossenrobotics.com/Shared/readthedocs/widowx/widowxbuildcheck.html
+
+
 
 Firmware: ROS
--------------
+^^^^^^^^^^^^^
 
-  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup.
+  For an ROS install, you use the ROS sketch you downloaded in the Arduino IDE Setup. This firmware acts as a passthrough, compatible with the 'arbotix_python<http://wiki.ros.org/arbotix_python>'_ library and any derivatives. All of the configuration is handled by the software passing commands to and reading data from your ArbotiX-M. This sketch is also used by the DynaManager Software, useful for IDing your servos.
 
 
 
 .. attention::
   If you are installing this firmware for use with the ROS kit, skip to the rest of the Firmware Section, Follow the instruction for IDing your Dynamixel Servos, and Follow the instruction in the Software for ROS section.
+  
+Firmware: ArmLink
+^^^^^^^^^^^^^^^^^
+
+  If you would like to control your WidowX arm over a USB connection to a computer using a simple graphic user interface, You might want to try loading the **InterbotixArmLinkSerial** Firmware and running the ArmLink Software.
+
 
 Dynamixel Servo ID
 ------------------
