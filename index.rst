@@ -90,6 +90,5 @@ About this guide
 
    hardware.rst
    software.rst
-   testing.rst
    operation.rst
    projects.rst
