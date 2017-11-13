@@ -57,13 +57,13 @@ Software For ROS
 
   Install Xenial (Ubuntu 16.04.X LTS) on your machine. If you don't know how to do this, follow the directions on the `Ubuntu Website <https://www.ubuntu.com/download/desktop>`_
 
-Software For ROS: Install Dev branch of GTK 3 for compilers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Install Dev branch of GTK 3 for compilers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * sudo apt-get install build-essential libgtk-3-dev
 
-Software For ROS: Install ROS Kinetic
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Install ROS Kinetic
+^^^^^^^^^^^^^^^^^^^
 
   `Installation Instructions from ROS.org <http://wiki.ros.org/kinetic/Installation/Ubuntu>`_
 
@@ -85,8 +85,8 @@ Software For ROS: Install ROS Kinetic
 
   * source ~/.bashrc
 
-Software For ROS: RealSense ROS Package Install:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RealSense ROS Package Install:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Prerequisites
   * wget -O enable_kernel_sources.sh http://bit.ly/en_krnl_src
@@ -120,23 +120,23 @@ Kernel 4.10 installation work-around
 
   * ./scripts/patch-realsense-ubuntu-xenial.sh
 
-Software For ROS: Additional dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Additional dependencies
+^^^^^^^^^^^^^^^^^^^^^^^
 
   * sudo apt install git htop
 
   * sudo apt install ros-kinetic-moveit ros-kinetic-pcl-ros
 
-Software For ROS: Setting dialout permission for Arbotix
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Setting dialout permission for Arbotix
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   Replace *yourUserAccount* with the system account you are using
   * sudo usermod -a -G dialout yourUserAccount
 
   * sudo reboot
 
-Software For ROS: Clone widowx_arm repository and build
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Clone widowx_arm repository and build
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * mkdir -p ~/widowx_arm/src
 
@@ -150,8 +150,8 @@ Software For ROS: Clone widowx_arm repository and build
 
   * catkin_make
 
-Software For ROS: Test execution without additional sensors
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test execution without additional sensors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * cd ~/widowx_arm
 
@@ -159,8 +159,8 @@ Software For ROS: Test execution without additional sensors
 
   * roslaunch widowx_arm_bringup arm_moveit.launch sim:=false sr300:=false
 
-Software For ROS: Test execution with SR300 sensor
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test execution with SR300 sensor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
   * cd ~/widowx_arm
 
